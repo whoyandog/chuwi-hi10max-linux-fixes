@@ -14,5 +14,5 @@ sudo udevadm trigger -s iio
 
 ```bash 
 sudo systemctl restart iio-sensor-proxy
-monitor-system
+monitor-sensor
 ```
