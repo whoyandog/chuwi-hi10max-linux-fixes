@@ -1,0 +1,2 @@
+SUBSYSTEM=="iio", KERNEL=="iio:device*", ATTR{name}=="mxc4005", ATTRS{name}=="MXC6655:00", \
+    ENV{ACCEL_MOUNT_MATRIX}="0 1 0 -1 0 0 0 0 1"
