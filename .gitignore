@@ -1,0 +1,28 @@
+tee .gitignore > /dev/null <<'EOF'
+# System files
+*.swp
+*.bak
+*.tmp
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor configs
+.vscode/
+.idea/
+
+# Build artifacts
+*.o
+*.so
+*.ko
+*.mod
+
+# Systemd / udev temp
+*.service~
+*.rules~
+EOF
+
