@@ -5,7 +5,7 @@
 1. Copy udev rule:
 
 ```bash
-sudo cp udev/90-accel-matrix.rules /etc/udev/rules.d/
+sudo cp udev/90-chuwi-accel-matrix.rules /etc/udev/rules.d/
 sudo udevadm control --reload
 sudo udevadm trigger -s iio
 ```
