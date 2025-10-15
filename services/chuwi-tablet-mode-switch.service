@@ -1,0 +1,14 @@
+[Unit]
+Description=Chuwi tablet mode switch service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/chuwi-tablet-mode-switch.py
+ExecStop=/bin/true
+KillMode=control-group
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

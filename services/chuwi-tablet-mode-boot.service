@@ -1,0 +1,12 @@
+[Unit]
+Description=Check tablet dock at boot and (stop|start) chuwi-tablet-mode-switch.service
+After=systemd-udevd.service
+Wants=systemd-udevd.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/chuwi-check-tablet-dock.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

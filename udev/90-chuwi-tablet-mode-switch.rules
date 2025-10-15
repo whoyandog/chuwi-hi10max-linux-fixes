@@ -1,0 +1,2 @@
+ACTION=="add",    SUBSYSTEM=="usb", KERNEL=="1-3", RUN+="/usr/bin/systemctl --no-block stop chuwi-tablet-mode-switch.service"
+ACTION=="remove", SUBSYSTEM=="usb", KERNEL=="1-3", RUN+="/usr/bin/systemctl --no-block start chuwi-tablet-mode-switch.service"
