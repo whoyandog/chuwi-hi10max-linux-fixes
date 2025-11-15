@@ -1,28 +1,38 @@
-tee .gitignore > /dev/null <<'EOF'
-# System files
+# Editor temporary files
 *.swp
+*.swo
+*~
 *.bak
 *.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Editor configs
+# IDE configs
 .vscode/
 .idea/
 
-# Build artifacts
+# Kernel module build artifacts
 *.o
-*.so
 *.ko
 *.mod
+*.mod.c
+*.mod.*
+*.symvers
+modules.order
+*.cmd
+*.d
+*.tmp_versions/
+Module.symvers
 
-# Systemd / udev temp
+# Python cache
+__pycache__/
+*.pyc
+
+# Backup files for udev/systemd
 *.service~
 *.rules~
-EOF
-
